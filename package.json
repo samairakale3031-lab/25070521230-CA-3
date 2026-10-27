@@ -1,0 +1,30 @@
+{
+  "name": "orbit-explore-the-universe",
+  "version": "1.0.0",
+  "description": "ORBIT — Explore the Universe: A cinematic full-stack space exploration web application",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "node server/src/scripts/seed.js",
+    "dev:server": "node --watch server/src/index.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm --prefix client run build",
+    "start": "node server/src/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "space",
+    "astronomy",
+    "solarsystem",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "nasa-api"
+  ],
+  "author": "samairakale3031-lab",
+  "license": "ISC"
+}
